@@ -18,4 +18,5 @@ Run:
 
     $ ycode
 
-
+Example:
+<img src="/example.gif?raw=true"/>

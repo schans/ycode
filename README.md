@@ -6,7 +6,7 @@ Provide copying and pasting to the Clipboard for Go.
 
 ## Build:
 ```
-$ go get github.com/schans/ycode`
+$ go get github.com/schans/ycode
 ```
 
 ## Platforms:

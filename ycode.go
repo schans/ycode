@@ -33,7 +33,7 @@ func main() {
 	// get yubico accounts
 	accounts, err := getAccounts()
 	if err != nil {
-		fmt.Println("Error: %s", err.Error())
+		fmt.Println("Error: ", err.Error())
 		return
 	}
 	//fmt.Printf("Accounts: %v\n", accounts)
@@ -58,14 +58,14 @@ func main() {
 	// ask the question
 	err = survey.Ask(accountQs, &answers)
 	if err != nil {
-		fmt.Println("Error: %s", err.Error())
+		fmt.Println("Error: ", err.Error())
 		return
 	}
 
   // get code
 	code, err := getCode(answers.Account)
 	if err != nil {
-		fmt.Println("Error: %s", err.Error())
+		fmt.Println("Error: ", err.Error())
 		return
 	}
 	clipboard.WriteAll(code)
